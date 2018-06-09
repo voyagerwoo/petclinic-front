@@ -11,7 +11,7 @@
     "test": "npm run unit",
     "lint": "eslint --ext .js,.vue src test/unit",
     "build": "node build/build.js",
-    "deploy:s3": "npm run build:prod && aws s3 cp dist/ s3://petclinc-www --recursive"
+    "deploy:s3": "npm run build && aws s3 cp dist/ s3://vw-petclinc-www --recursive"
   },
   "dependencies": {
     "vue": "^2.5.2",
