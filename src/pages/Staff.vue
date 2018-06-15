@@ -24,7 +24,7 @@ export default {
     }
   },
   created () {
-    restService.fetchVets().then(r => { console.log(r); this.vets = r })
+    restService.fetchVets().then(r => { this.vets = r })
   }
 }
 </script>
