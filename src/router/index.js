@@ -5,6 +5,8 @@ import Staff from '@/pages/Staff'
 import Booking from '@/pages/Booking'
 import MyPets from '@/pages/MyPets'
 import PetPictures from '@/pages/PetPictures'
+import Login from '@/pages/Login'
+import Signup from '@/pages/Signup'
 
 Vue.use(Router)
 
@@ -34,8 +36,17 @@ let router = new Router({
       path: '/pet-pictures',
       name: '펫 사진',
       component: PetPictures
+    },
+    {
+      path: '/login',
+      name: '로그인',
+      component: Login
+    },
+    {
+      path: '/signup',
+      name: '회원가입',
+      component: Signup
     }
-
   ]
 })
 
