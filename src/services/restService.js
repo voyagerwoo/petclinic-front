@@ -10,6 +10,6 @@ var config = {
 
 export default {
   fetchVets: () => {
-    return axios.get(`${serviceHost}/vets`, config).then(r => r.data)
+    return axios.get(`${serviceHost}/open/vets`, config).then(r => r.data)
   }
 }
