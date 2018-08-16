@@ -27,22 +27,25 @@
         </div>
       </div>
     </nav>
-    <div class="container">
+    <div class="container main-content">
       <router-view/>
     </div>
   </div>
 </template>
 
 <script>
-export default {
-  name: 'App'
-}
+  export default {
+    name: 'App'
+  }
 </script>
 
 <style>
-@import url('//cdn.jsdelivr.net/font-iropke-batang/1.2/font-iropke-batang.css');
+  @import url('//cdn.jsdelivr.net/font-iropke-batang/1.2/font-iropke-batang.css');
 
-#app {
-  font-family: "Iropke Batang", "IropkeBatang", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
-}
+  #app {
+    font-family: "Iropke Batang", "IropkeBatang", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+  }
+  #app .main-content {
+    padding: 1em;
+  }
 </style>
