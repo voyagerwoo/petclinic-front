@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const serviceHost = 'http://localhost:9460'
+const serviceHost = process.env.ROOT_API;
 var config = {
   headers: {
     'Access-Control-Allow-Origin': '*',

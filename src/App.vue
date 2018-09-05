@@ -35,7 +35,12 @@
 
 <script>
   export default {
-    name: 'App'
+    name: 'App',
+    mounted() {
+      if(process.env.NODE_ENV === 'development') {
+        console.log(`### DEV MODE ###\nROOT API : ${process.env.ROOT_API}`);
+      }
+    }
   }
 </script>
 
